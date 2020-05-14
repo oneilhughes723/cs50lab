@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>O'Neil Hughes</title>
+    </head>
+    <body>
+        <!-- A grey horizontal navbar that becomes vertical on small screens -->
+        <nav class="navbar navbar-expand-lg bg-secondary text-white">
+
+      <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contact Us</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link text-white" href="#">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="jumbotron bg-primary text-white";>
+            <h1>O'Neil Hughes</h1>
+                <p>A website created for problem set 8, Harvard CS50x.</p></p>
+        </div>
+        <div class="container">
+        </div>
+        <p class="variable"  id="variable1" style="color:purple"> This is my website!</p>
+        <p class="variable" id ="id2" style="color:green"> I am fulfilling the requirements of this problem set!</p>
+        <form action="/action_page.php">
+            <div class="form-group">
+                <label for="name">Your name here!</label>
+                <input type="name" class="form-control" placeholder="name" id="name">
+            </div>
+            <div class="form-group">
+                <label for="message">Please leave me message!</label>
+                <input type="Message" class="form-control" placeholder="Enter Message" id="message">
+  </div>
+  <div class="form-group form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> I would like to have my name displayed on my message.
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+</form>
+<button type="button" onclick="document.getElementById('id2').innerHTML='HELLO!'">HELLO!</button>
+<table id="change-color">
+<tr>
+    <script>
+    function red() {
+    document.getElementById('variable1').style.color ="red";
+    }
+    </script>
+    <td><button type="button" class="btn btn-primary" id="red" onclick="document.getElementById('variable1').innerHTML='red'">Red</button></td>
+    <td><button type="button" class="btn btn-primary" id="green" onclick="red()">Green</button></td>
+    <td><button type="button" class="btn btn-primary" id="blue" onclick="document.getElementsByTagName('h1')[0].style.color='orange'">Blue</button></td>
+    <td><button type="button" onclick="document.getElementsByClassName('nav-link').style.color = 'green'">TEST!</button></td>
+</tr>
+</table>
+<button type="button"
+onclick="document.getElementById('variable1').innerHTML = 'Date and Time'">
+Click me to display Date and Time.</button>
+
+        <!-- A grey horizontal navbar that becomes vertical on small screens -->
+        <nav class="navbar navbar-expand-sm bg-light">
+
+      <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+            </ul>
+
+</nav>
+    </body>
+</html>
